@@ -1,8 +1,7 @@
 <x-guest-layout>
     <x-auth-card>
         <x-slot name="logo">
-            <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+            <a href="/">          
             </a>
         </x-slot>
 
@@ -23,6 +22,11 @@
                 <x-label for="email" :value="__('E-mail')" />
 
                 <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
+            </div>
+            <div>
+                <x-label for="telephone" :value="__('Telephone')" />
+
+                <x-input id="telephone" class="block mt-1 w-full" type="text" name="telephone" :value="old('telephone')" required autofocus />
             </div>
 
             <!-- Password -->

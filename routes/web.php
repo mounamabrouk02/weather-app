@@ -19,6 +19,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware("auth")->group(function () {
     Route::get("/", [HomeController::class, "index"])->name("dashboard");
     Route::get("/villes", [VilleController::class, "create"])->name("ville.create");
+    Route::post("/villes", [VilleController::class, "store"])->name("ville.store");
+    Route::delete("/villes/{id}", [VilleController::class, "destroy"])->name("ville.destroy");
+
 
 });
 
