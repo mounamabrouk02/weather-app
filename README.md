@@ -9,6 +9,7 @@ Le projet utilise l’API Weather pour récupérer les données météorologique
 
 
 
+![capture projet](https://user-images.githubusercontent.com/48160788/151731210-7b73ea12-48d1-421c-bc03-df21f0d27c20.PNG)
 
  
 
@@ -38,20 +39,20 @@ Installer Xampp (celui-ci va vous permettre d’installer php et MySQL)
 Installer Visual studio code 
 Télécharger le zip code, après avoir fait l’extraction, ouvrir le projet dans Visual Studio Code
 Ouvrit la CMD dans le dossier et exécuter les commandes suivants :
-    - composer install
-    - npm install
-    - npm run dev
+- composer install
+- npm install
+- npm run dev
  
 Ouvrir XAMPP, lancer Apache et MySQL.
 Créer votre Base de données dans MySQL avec le nom “weather”.
 Dans le fichier .env supprimer la ligne suivante :
-    - DB_FOREIGN_KEYS=true
+- DB_FOREIGN_KEYS=true
 Créer un comte dans le site https://weatherstack.com/dashboard ensuite récupérer l’API KEY et placer le dans la ligne suivante dans le fichier .env :
-    -  WEATHER_API_KEY=
+-  WEATHER_API_KEY=
  
 Ouvrir le terminal dans Visual studio code. Exécuter les commande suivants :
-    - php artisan migrate
-    - php artisan serve
+- php artisan migrate
+- php artisan serve
  
  
 # Caractéristique :
